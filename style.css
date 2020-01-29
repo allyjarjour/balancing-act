@@ -1,0 +1,132 @@
+body {
+  background-color: #F5F5F5;
+  border: green solid 2px;
+  height: 100%;
+}
+
+header {
+  padding-left: 90px;
+}
+
+.site-logo {
+  height: 60px;
+  width: 60px;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+.nav-icon {
+  margin-top: 10px;
+}
+
+.nav-icons-box {
+  height: 200px;
+  width: 50px;
+  border: green solid 2px;
+  position: absolute;
+  top: 250px;
+  left: 8px;
+}
+
+.welcome-banner {
+  width: 500px;
+  padding-left: 20px;
+  border: green solid 2px;
+  margin-left: 30px;
+}
+
+.finance-box {
+  width: 140px;
+  height: 75px;
+  background-color: white;
+  display: inline-block;
+  margin-right: 20px;
+  padding-left: 15px;
+  border: green solid 2px;
+}
+
+.finance-box.left {
+  margin-left: 30px;
+}
+
+.accounts-title {
+  width: 520px;
+  height: 65px;
+  margin-left: 30px;
+  border: yellow solid 2px;
+  position: relative;
+}
+
+button {
+  border: green solid 2px;
+  position: absolute;
+  margin: 0px;
+  right: 0;
+  top: 15px;
+}
+
+nav {
+  background-color: white;
+  border: green solid 2px;
+  margin: 0px;
+  top: 0px;
+  left: 0px;
+  padding: 0px;
+  width: 70px;
+  height: 100%;
+  position: fixed;
+  z-index: 10;
+}
+
+main {
+  border: red solid 2px;
+  padding-left: 60px;
+  width: 600px;
+  height: 100%;
+  display: inline-block;
+}
+
+.recent-transactions {
+  width: 400px;
+  height: 100%;
+  display: inline-block;
+  float: right;
+  position: relative;
+  border: red solid 2px;
+  margin: auto 30px;
+  padding-left: 20px;
+}
+
+table {
+  float: left;
+  border: blue solid 2px;
+}
+
+.accounts {
+  width: 500px;
+  height: 50px;
+  background-color: white;
+  border: blue solid 2px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 30px;
+  position: relative;
+}
+
+.accounts-icon {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 5px;
+  left: 10px;
+}
+
+.bank-name {
+  position: absolute;
+  left: 150px;
+}
+
+.account-type {
+  position: absolute;
+  left: 400px;
+}
