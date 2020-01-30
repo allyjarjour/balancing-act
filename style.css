@@ -1,7 +1,8 @@
 body {
   background-color: #F5F5F5;
-  border: green solid 2px;
   height: 100%;
+  font-family: 'Biryani', sans-serif;
+  color: #363636;
 }
 
 header {
@@ -22,7 +23,6 @@ header {
 .nav-icons-box {
   height: 200px;
   width: 50px;
-  border: green solid 2px;
   position: absolute;
   top: 250px;
   left: 8px;
@@ -30,23 +30,41 @@ header {
 
 .welcome-banner {
   width: 500px;
+  height: 70px;
+  background: linear-gradient(45deg, #8ED1DC, #E3F4F6);
   padding-left: 20px;
-  border: green solid 2px;
   margin-left: 30px;
+  margin-bottom: 20px;
+  box-shadow: 0.2em 0.2em .9em #ebebeb;
+  border-radius: 5px;
+  padding-top: 5px;
 }
 
 .finance-box {
   width: 140px;
-  height: 75px;
+  height: 65px;
   background-color: white;
   display: inline-block;
   margin-right: 20px;
   padding-left: 15px;
-  border: green solid 2px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  box-shadow: 0.2em 0.2em .9em #ebebeb;
+  border-radius: 5px;
 }
 
 .finance-box.left {
   margin-left: 30px;
+}
+
+.finance-titles {
+  font-size: 12px;
+  margin-bottom: 0px;
+}
+
+.finance-numbers {
+  font-size: 20px;
+  margin-top: 0px;
 }
 
 .accounts-title {
@@ -54,7 +72,6 @@ header {
   height: 65px;
   margin-top: 30px;
   margin-left: 30px;
-  border: yellow solid 2px;
   position: relative;
 }
 
@@ -82,7 +99,6 @@ button p {
 
 nav {
   background-color: white;
-  border: green solid 2px;
   margin: 0px;
   top: 0px;
   left: 0px;
@@ -94,7 +110,6 @@ nav {
 }
 
 main {
-  border: red solid 2px;
   padding-left: 60px;
   width: 600px;
   height: 100%;
@@ -110,17 +125,20 @@ main {
   margin: auto 80px auto 10px;
   padding: 20px;
   background: white;
+  box-shadow: 0.2em 0.2em .9em #ebebeb;
+  border-radius: 5px;
 }
 
 .accounts {
   width: 520px;
   height: 50px;
   background-color: white;
-  border: blue solid 2px;
   margin-top: 10px;
   margin-bottom: 10px;
   margin-left: 30px;
   position: relative;
+  box-shadow: 0.2em 0.2em .9em #ebebeb;
+  border-radius: 5px;
 }
 
 .accounts-icon {
@@ -146,4 +164,5 @@ main {
   width: 500px;
   text-align: left;
   float: left;
+  line-height: 35px;
 }
