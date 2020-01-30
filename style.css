@@ -52,17 +52,32 @@ header {
 .accounts-title {
   width: 520px;
   height: 65px;
+  margin-top: 30px;
   margin-left: 30px;
   border: yellow solid 2px;
   position: relative;
 }
 
-button {
-  border: green solid 2px;
+.manage-account-button {
   position: absolute;
   margin: 0px;
   right: 0;
   top: 15px;
+  border-radius: 20px;
+  background-color: #1CA3BA;
+}
+
+.new-transaction-button {
+  position: absolute;
+  margin-right: 10px;
+  right: 0;
+  top: 15px;
+  border-radius: 20px;
+  background-color: #1CA3BA;
+}
+
+button p {
+  color: white;
 }
 
 nav {
@@ -87,23 +102,18 @@ main {
 }
 
 .recent-transactions {
-  width: 400px;
+  width: 500px;
   height: 100%;
   display: inline-block;
   float: right;
   position: relative;
-  border: red solid 2px;
-  margin: auto 30px;
-  padding-left: 20px;
-}
-
-table {
-  float: left;
-  border: blue solid 2px;
+  margin: auto 80px auto 10px;
+  padding: 20px;
+  background: white;
 }
 
 .accounts {
-  width: 500px;
+  width: 520px;
   height: 50px;
   background-color: white;
   border: blue solid 2px;
@@ -129,4 +139,11 @@ table {
 .account-type {
   position: absolute;
   left: 400px;
+}
+
+.table {
+  border-bottom: #CCCCCC solid 1px;
+  width: 500px;
+  text-align: left;
+  float: left;
 }
