@@ -7,21 +7,20 @@
 </head>
 <body>
   <nav>
-    <img class="site-logo" src="assets/images/elephant.svg"
-    alt="Elephant Icon">
+    <img class="site-logo" src="assets/images/elephant.svg" alt="Elephant Icon">
     <div class="nav-icons-box">
-      <img class="nav-icon" src="assets/images/dashboard.svg"
-        alt="Dashboard Icon">
-      <img class="nav-icon" src="assets/images/transactions.svg"
-      alt="Transactions Icon">
-      <img class="nav-icon" src="assets/images/profile.svg"
-      alt="Profile Icon">
+      <img class="nav-icon" id="dashboard-button" src="assets/images/dashboard.svg"
+        alt="Dashboard Icon" onclick="toggleDashboard()">
+      <img class="nav-icon" id="wallet-button" src="assets/images/transactions.svg"
+        alt="Transactions Icon" onclick="toggleWallet()">
+      <img class="nav-icon" id="profile-button" src="assets/images/profile.svg"
+        alt="Profile Icon" onclick="toggleProfile()">
     </div>
   </nav>
   <header>
     <h1>Balancing Act</h1>
   </header>
-  <main>
+  <main class="main">
     <section id="welcome-banner">
       <h3>Welcome, Oscar!</h3>
       <span id="x-button">&#9587;</span>
@@ -69,8 +68,8 @@
       <p class="account-type">Checking</p>
     </section>
   </main>
-  <div class="recent-transactions">
-    <h2>Recent Transactions</h2>
+  <section class="recent-transactions">
+    <h2 class="trans-title">Recent Transactions</h2>
     <button class="new-transaction-button">
       <p>NEW TRANSACTIONS</p>
     </button>
@@ -135,6 +134,6 @@
         <td>$6.00</td>
       </tr>
     </table>
-  </div>
+  </section>
   <script type="text/javascript" src="main.js"></script>
 </body>
