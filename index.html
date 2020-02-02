@@ -18,7 +18,7 @@
     </div>
   </nav>
   <header>
-    <h1>Balancing Act</h1>
+    <h1 class="site-title">Balancing Act</h1>
   </header>
   <main class="main">
     <section id="welcome-banner">
@@ -73,7 +73,7 @@
     <button class="new-transaction-button">
       <p>NEW TRANSACTIONS</p>
     </button>
-    <table class="table" rules=rows>
+    <table class="recent-trans-table" rules=rows>
       <tr>
         <th>Date</th>
         <th>Payee</th>
@@ -132,6 +132,29 @@
         <td>RTD</td>
         <td>-</td>
         <td>$6.00</td>
+      </tr>
+    </table>
+  </section>
+
+<!-- transactions page view ----------- -->
+
+  <header class="transactions-header" onload="hideTransOnload()">
+    <h1 class="trans-title">Transactions</h1>
+    <button>ALL</button>
+    <button>INFLOW</button>
+    <button>OUTFLOW</button>
+  </header>
+  <section class="transactions-section" onload="hideTransOnload()">
+    <table class="reg-trans-table" rules=rows>
+      <tr>
+        <th>Date</th>
+        <th>Account</th>
+        <th>Payee</th>
+        <th>Inflow</th>
+        <th>Outflow</th>
+      </tr>
+      <tr>
+        <td></td>
       </tr>
     </table>
   </section>
