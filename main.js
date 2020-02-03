@@ -1,4 +1,4 @@
-// hide banner on click ------------------
+// hide banner on click for dashboard-----
 
 var welcomeButton = document.getElementById('x-button');
 var welcomeBanner = document.querySelector('#welcome-banner');
@@ -41,7 +41,7 @@ var tableButton = document.querySelector('.new-transaction-button');
 var tableTitle = document.querySelector('.trans-title');
 var tableSection = document.querySelector('section.recent-transactions');
 var siteTitle = document.querySelector('.site-title');
-var transPageSection = document.querySelector('.transactions-section');
+var transPageSection = document.querySelector('.reg-trans-table');
 var transTitle = document.querySelector('.transactions-header');
 
 walletButton.addEventListener("click", hideMainElements)
@@ -92,9 +92,17 @@ function addTransContent() {
   transTitle.classList.remove('hidden');
 }
 
-// Hide transaction content on page toggleDashboard
+// Hide transaction content on reload for dashboard
+// and once clicking back onto dashboard
 
 window.onload = function hideTransOnload() {
-  document.querySelector('.transactions-section').classList.add('hidden');
+  document.querySelector('.reg-trans-table').classList.add('hidden');
   document.querySelector('.transactions-header').classList.add('hidden');
 };
+
+dashboardButton.addEventListener("click", removeTransElements)
+
+function removeTransElements() {
+  transPageSection.classList.add('hidden');
+  transTitle.classList.add('hidden');
+}

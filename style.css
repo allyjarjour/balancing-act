@@ -26,6 +26,7 @@ h1 {
   margin-left: 5px;
   margin-top: 10px;
   padding-left: 5px;
+  cursor: pointer;
 }
 
 .toggle-highlight {
@@ -208,12 +209,36 @@ main {
 
 .transactions-header {
   padding-left: 100px;
+  position: relative;
+  width: 600px;
 }
 
 .reg-trans-table {
   background-color: white;
   border-bottom: #CCCCCC solid 1px;
-  width: 50%;
+  width: 600px;
   text-align: left;
   line-height: 35px;
+  margin-left: 100px;
+}
+
+.reg-trans-table td {
+  padding-left: 20px;
+}
+
+.reg-trans-table th {
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+.trans-buttons-box {
+  position: absolute;
+  top: 5px;
+  right: 0;
+}
+
+.trans-button {
+  border-radius: 20px;
+  background-color: #1CA3BA;
+  width: 100px;
 }
