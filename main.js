@@ -43,6 +43,8 @@ var tableSection = document.querySelector('section.recent-transactions');
 var siteTitle = document.querySelector('.site-title');
 var transPageSection = document.querySelector('.reg-trans-table');
 var transTitle = document.querySelector('.transactions-header');
+var newTransaction = document.querySelector('.new-transaction');
+
 
 walletButton.addEventListener("click", hideMainElements)
 
@@ -81,6 +83,7 @@ function removeAllElements() {
   siteTitle.classList.add('hidden');
   transPageSection.classList.add('hidden');
   transTitle.classList.add('hidden');
+  newTransaction.classList.add('hidden');
 }
 
 // Bring back elements for transaction page
@@ -90,14 +93,16 @@ walletButton.addEventListener("click", addTransContent)
 function addTransContent() {
   transPageSection.classList.remove('hidden');
   transTitle.classList.remove('hidden');
+  newTransaction.classList.remove('hidden');
 }
 
 // Hide transaction content on reload for dashboard
-// and once clicking back onto dashboard
+// and bring back elements once clicking back onto dashboard
 
 window.onload = function hideTransOnload() {
-  document.querySelector('.reg-trans-table').classList.add('hidden');
-  document.querySelector('.transactions-header').classList.add('hidden');
+  transPageSection.classList.add('hidden');
+  transTitle.classList.add('hidden');
+  newTransaction.classList.add('hidden');
 };
 
 dashboardButton.addEventListener("click", removeTransElements)
@@ -105,4 +110,5 @@ dashboardButton.addEventListener("click", removeTransElements)
 function removeTransElements() {
   transPageSection.classList.add('hidden');
   transTitle.classList.add('hidden');
+  newTransaction.classList.add('hidden');
 }

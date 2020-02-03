@@ -111,8 +111,14 @@ h1 {
   margin: 0px;
   right: 0;
   top: 20px;
-  border-radius: 20px;
+}
+
+button {
   background-color: #1CA3BA;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  box-shadow: 0.2em 0.2em .9em #ebebeb;
 }
 
 .accounts-header {
@@ -125,12 +131,6 @@ h1 {
   margin-right: 10px;
   right: 20px;
   top: 25px;
-  border-radius: 20px;
-  background-color: #1CA3BA;
-}
-
-button p {
-  color: white;
 }
 
 nav {
@@ -217,9 +217,11 @@ main {
   background-color: white;
   border-bottom: #CCCCCC solid 1px;
   width: 600px;
+  float: left;
   text-align: left;
   line-height: 35px;
   margin-left: 100px;
+  box-shadow: 0.2em 0.2em .9em #ebebeb;
 }
 
 .reg-trans-table td {
@@ -233,12 +235,52 @@ main {
 
 .trans-buttons-box {
   position: absolute;
-  top: 5px;
+  top: 10px;
   right: 0;
 }
 
 .trans-button {
-  border-radius: 20px;
-  background-color: #1CA3BA;
   width: 100px;
+  cursor: pointer;
+  border: transparent;
+}
+
+.trans-button:hover {
+  background-color: white;
+  border: solid 2px #1CA3BA;
+  transition: 0;
+  color: #1CA3BA;
+}
+
+.new-transaction {
+  width: 400px;
+  box-shadow: 0.2em 0.2em .9em #ebebeb;
+  float: right;
+  top: 100px;
+  right: 80px;
+  border: transparent;
+  background-color: white;
+  text-align: center;
+  width: 500px;
+  margin: 0px 50px;
+}
+
+input, select{
+  box-shadow: 0 0 5px #ebebeb;
+  border: white;
+  border: #CCCCCC solid 1px;
+  width: 300px;
+  height: 30px
+}
+
+.log-button {
+  display: block;
+  margin: 20px auto 20px 100px;
+}
+
+fieldset p {
+  margin-bottom: 0px;
+  font-size: 15px;
+  text-align: left;
+  margin-left: 100px;
 }

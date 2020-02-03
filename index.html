@@ -39,9 +39,7 @@
     </section>
     <section class="accounts-title">
       <h2 class="accounts-header">Accounts</h2>
-      <button class="manage-account-button">
-        <p>MANAGE ACCOUNTS</p>
-      </button>
+      <button class="manage-account-button">MANAGE ACCOUNTS</button>
     </section>
     <section class="accounts">
       <img class="accounts-icon" src="assets/images/checking.svg"
@@ -70,9 +68,7 @@
   </main>
   <section class="recent-transactions">
     <h2 class="trans-title">Recent Transactions</h2>
-    <button class="new-transaction-button">
-      <p>NEW TRANSACTIONS</p>
-    </button>
+    <button class="new-transaction-button">NEW TRANSACTIONS</button>
     <table class="recent-trans-table" rules=rows>
       <tr>
         <th>Date</th>
@@ -141,15 +137,9 @@
   <header class="transactions-header" onload="hideTransOnload()">
     <h1 class="trans-title">Transactions</h1>
     <div class="trans-buttons-box">
-      <button class="trans-button">
-        <p>ALL</p>
-      </button>
-      <button class="trans-button">
-        <p>INFLOW</p>
-      </button>
-      <button class="trans-button">
-        <p>OUTFLOW</p>
-      </button>
+      <button class="trans-button">ALL</button>
+      <button class="trans-button">INFLOW</button>
+      <button class="trans-button">OUTFLOW</button>
     </div>
   </header>
   <table class="reg-trans-table" rules=rows onload="hideTransOnload()">
@@ -259,5 +249,35 @@
       <td>$212.24</td>
     </tr>
   </table>
+  <fieldset class="new-transaction">
+    <h2>New Transaction</h2>
+    <p>Type of Transactions:</p>
+    <select>
+      <option>Expense</option>
+      <option>Transfer</option>
+      <option>Credit</option>
+    </select>
+    <p>Category:</p>
+    <select>
+      <option>- Select One -</option>
+      <option>Bills</option>
+      <option>Gas</option>
+      <option>Food</option>
+    </select>
+    <p>Account from:</p>
+    <select>
+      <option>- Select One -</option>
+      <option>Checking</option>
+      <option>Savings</option>
+      <option>Credit Card</option>
+    </select>
+    <p>Payee:</p>
+    <input type="text" maxlength="100"/>
+    <p>Outflow:</p>
+    <input type="number" maxlength="10" />
+    <p>Category:</p>
+    <input type="text" maxlength="100" />
+    <button class="log-button" alt="Log Expense">Log Expense</button>
+  </fieldset>
   <script type="text/javascript" src="main.js"></script>
 </body>
