@@ -13,6 +13,38 @@ h1 {
   margin-left: 10px;
 }
 
+nav {
+  background-color: white;
+  margin: 0px;
+  top: 0px;
+  left: 0px;
+  padding: 0px 8px 0px 0px;
+  width: 70px;
+  height: 100%;
+  position: fixed;
+  z-index: 10;
+  box-shadow: 0.2em 0.2em .9em #ebebeb;
+}
+
+main {
+  margin-left: 10px;
+  padding-left: 60px;
+  width: 650px;
+  height: 100%;
+  display: inline-block;
+}
+
+button {
+  background-color: #1CA3BA;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  box-shadow: 0.2em 0.2em .9em #ebebeb;
+}
+
+
+/* navigation bar ------------- */
+
 .site-logo {
   height: 60px;
   width: 60px;
@@ -45,6 +77,8 @@ h1 {
   left: 8px;
 }
 
+/* welcome banner ----------- */
+
 #welcome-banner {
   width: 560px;
   height: 70px;
@@ -70,6 +104,8 @@ h1 {
   font-size: 12px;
   cursor: pointer;
 }
+
+/* three finance boxes on dashboard page */
 
 .finance-box {
   width: 165.5px;
@@ -98,6 +134,8 @@ h1 {
   margin-top: 0px;
 }
 
+/* accounts section on dashboard page */
+
 .accounts-title {
   width: 590px;
   height: 65px;
@@ -113,59 +151,6 @@ h1 {
   top: 20px;
 }
 
-button {
-  background-color: #1CA3BA;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 20px;
-  box-shadow: 0.2em 0.2em .9em #ebebeb;
-}
-
-.accounts-header {
-  position: absolute;
-  top: 5px;
-}
-
-.new-transaction-button {
-  position: absolute;
-  margin-right: 10px;
-  right: 20px;
-  top: 25px;
-}
-
-nav {
-  background-color: white;
-  margin: 0px;
-  top: 0px;
-  left: 0px;
-  padding: 0px 8px 0px 0px;
-  width: 70px;
-  height: 100%;
-  position: fixed;
-  z-index: 10;
-  box-shadow: 0.2em 0.2em .9em #ebebeb;
-}
-
-main {
-  margin-left: 10px;
-  padding-left: 60px;
-  width: 650px;
-  height: 100%;
-  display: inline-block;
-}
-
-.recent-transactions {
-  width: 475px;
-  height: 100%;
-  float: right;
-  position: relative;
-  margin: auto 50px auto 10px;
-  padding: 10px 30px 20px 30px;
-  background: white;
-  box-shadow: 0.2em 0.2em .9em #ebebeb;
-  border-radius: 5px;
-}
-
 .accounts {
   width: 575px;
   height: 60px;
@@ -177,6 +162,11 @@ main {
   position: relative;
   box-shadow: 0.2em 0.2em .9em #ebebeb;
   border-radius: 5px;
+}
+
+.accounts-header {
+  position: absolute;
+  top: 5px;
 }
 
 .accounts-icon {
@@ -197,6 +187,27 @@ main {
   left: 400px;
 }
 
+/* recent transaction section on dashboard page */
+
+.new-transaction-button {
+  position: absolute;
+  margin-right: 10px;
+  right: 20px;
+  top: 25px;
+}
+
+.recent-transactions {
+  width: 475px;
+  height: 100%;
+  float: right;
+  position: relative;
+  margin: auto 50px auto 10px;
+  padding: 10px 30px 20px 30px;
+  background: white;
+  box-shadow: 0.2em 0.2em .9em #ebebeb;
+  border-radius: 5px;
+}
+
 .recent-trans-table {
   border-bottom: #CCCCCC solid 1px;
   width: 475px;
@@ -205,7 +216,7 @@ main {
   line-height: 35px;
 }
 
-/* transaction page ------------- */
+/* transactions section on transaction page */
 
 .transactions-header {
   padding-left: 100px;
@@ -217,6 +228,7 @@ main {
   background-color: white;
   border-bottom: #CCCCCC solid 1px;
   width: 600px;
+  height: 600px;
   float: left;
   text-align: left;
   line-height: 35px;
@@ -244,6 +256,8 @@ main {
   cursor: pointer;
   border: transparent;
 }
+
+/* new transaction section on transaction page */
 
 .trans-button:hover {
   background-color: white;
